@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Seiya - Login</title>
+    <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar" id="mysidebar">
+        <a href="#" class="closebtn" onclick="closenav()">x</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="#">Login</a>
+        <a href="cadastrar.html">Cadastre-se</a>
+        <a href="sobre.html">Sobre</a>
+    </div>
+
+    <div class="navbar" id="mynavbar">
+        <div class="header">
+            <a class="opennav" onclick="opennav()">☰</a>
+        </div>
+        <img src="./img_common/logo.png" id="logo">
+        <ul>
+            <li><a href="./index.html">INÍCIO</a></li>
+            <li><a href="./historia.html">HISTÓRIA</a></li>
+            <li><a href="./personagens.html">PERSONAGENS</a></li>
+            <li><a href="./games.html">GAMES</a></li>
+            <li><a href="./autor.html">AUTOR</a></li>
+        </ul>
+        <a href="help.html" id="help"></a>
+    </div>
+
+
+
+    <div class="description">
+        <div class="container">
+            <div class="login_box" id="login_box_movement">
+                <img src="./img_common/tema.png" class="tema_box">
+                <h3>Login:</h3><br>
+                <form action="#" class="formulario">
+                    E-mail: <br>
+                    <input type="email" placeholder="Insira seu e-mail" class="answer" required> <br>
+                    Senha: <br>
+                    <input type="password" placeholder="Insira sua senha" class="answer" required>
+                    <br>
+                    <input type="submit" value="Entrar" class="button">
+                </form>
+                <a href="cadastrar.html"><button class="button">Cadastre-se</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
