@@ -1,10 +1,10 @@
 function closenav() {
     document.getElementById("mysidebar").style.width = "0";
-    document.getElementById("cadastro_box_movement").style.marginLeft = "15%";
+   
 }
 function opennav() {
     document.getElementById("mysidebar").style.width = "15%";
-    document.getElementById("cadastro_box_movement").style.marginLeft = "25%";
+   
 }
 
 // FORMULARIO DA PAGINA CADASTRO // 

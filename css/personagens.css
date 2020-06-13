@@ -4,7 +4,7 @@ body{
 .navbar{
     width: 100%;
     height: 80px;
-    background: linear-gradient(90deg, rgba(127,143,201,1) 0%, rgba(61,81,172,1) 18%, rgba(24,42,117,1) 43%, rgba(2,24,116,1) 64%);
+    background: linear-gradient(90deg, rgba(127,143,201,1) 3%, rgba(101,124,227,1) 30%, rgba(24,42,117,1) 55%, rgba(2,24,116,1) 82%);
 }
 #logo{
     float: left;
@@ -88,11 +88,27 @@ body{
     margin-left: 80%;
 }
 
+/*GRÁFICOS*/
+#cosmo_seiya{
+    height: 100%;
+    width: 100%;
+}
+#cosmo_shiryu{
+    height: 100%;
+    width: 100%;
+}
+#cosmo_hyoga{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 /* Descrição */
 
 .description{
     float: left;
-    background: url(../img_common/fundo.jpg) center center fixed;
+    background: url(../img_common/fundo.gif) center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -106,11 +122,245 @@ body{
 }
 .box-personagem{
     float: left;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 2%;
+    margin-bottom: 3%;
     width: 30%;
     height: 300px;
     background-color: rgba(255,255,255,0.5);
     border:rgba(61,81,172,1) 3px solid;;
     border-radius: 0 15% 0 15%;
+    
+}
+#seiya{
+    background: url(../img_personagens/seiya.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    /* float: left; */
+}
+#shiryu{
+    background: url(../img_personagens/shiryu.png) center center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    height: 100%;
+    width: 40%;
+    /* float: left; */
+}
+#hyoga{
+    background: url(../img_personagens/hyoga.png) center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 100%;
+    width: 40%;
+    /* float: left; */
+}
+#shun{
+    background: url(../img_personagens/shun.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#ikki{
+    background: url(../img_personagens/ikki.png) center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#marin{
+    background: url(../img_personagens/marin.png) center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#shina{
+    background: url(../img_personagens/shina.png) center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#jamian{
+    background: url(../img_personagens/jamian.png) center center;
+    background-repeat: no-repeat;
+    background-size: 98%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#dante{
+    background: url(../img_personagens/dante.png) center center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#kapela{
+    background: url(../img_personagens/kapela.png) center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#misty{
+    background: url(../img_personagens/misty.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#agora{
+    background: url(../img_personagens/agora.png) center center;
+    background-repeat: no-repeat;
+    background-size: 61%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#shiva{
+    background: url(../img_personagens/shiva.png) center center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#aco{
+    background: url(../img_personagens/aco.png) center center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#athena{
+    background: url(../img_personagens/athena.png) center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#poseidon{
+    background: url(../img_personagens/poseidon.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#hades{
+    background: url(../img_personagens/hades.png) center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#mu{
+    background: url(../img_personagens/mu.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#aldebaran{
+    background: url(../img_personagens/aldebran.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#saga{
+    background: url(../img_personagens/saga.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#mdm{
+    background: url(../img_personagens/mdm.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#aioria{
+    background: url(../img_personagens/aioria.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#shaka{
+    background: url(../img_personagens/shaka.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#dohko{
+    background: url(../img_personagens/dohko.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#milo{
+    background: url(../img_personagens/milo.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#aioros{
+    background: url(../img_personagens/aioros.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#shura{
+    background: url(../img_personagens/shura.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#camus{
+    background: url(../img_personagens/camus.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#afrodite{
+    background: url(../img_personagens/afrodite.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 40%;
+    float: left;
 }

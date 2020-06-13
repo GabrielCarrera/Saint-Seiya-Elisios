@@ -7,57 +7,243 @@
     <title>Saint Seiya - Personagens</title>
     <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/personagens.css">
-    <script src="./js/nav.js"></script>
+    <script src="./js/pers.js"></script>
+
+    <script async="" src="./grafico/area _ radar _ Chart.js sample_files/analytics.js.transferir"></script>
+	<script src="./grafico/area _ radar _ Chart.js sample_files/Chart.min.js.transferir"></script>
+	<script src="./grafico/area _ radar _ Chart.js sample_files/utils.js.transferir"></script>
+    
+  
 </head>
 
 <body>
     <div class="description">
-        
-            <div class="sidebar" id="mysidebar">
-                <a href="#" class="closebtn" onclick="closenav()">x</a>
-                <a href="perfil.html">Perfil</a>
-                <a href="login.html">Login</a>
-                <a href="cadastrar.html">Cadastre-se</a>
-                <a href="sobre.html">Sobre</a>
+        <div class="sidebar" id="mysidebar">
+            <a href="#" class="closebtn" onclick="closenav()">x</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="login.html">Login</a>
+            <a href="cadastrar.html">Cadastre-se</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+        <div class="navbar" id="mynavbar">
+            <div class="header">
+                <a class="opennav" onclick="opennav()">☰</a>
             </div>
-            <div class="navbar" id="mynavbar">
-                <div class="header">
-                    <a class="opennav" onclick="opennav()">☰</a>
-                </div>
-                <img src="./img_common/logo.png" id="logo">
-                <ul>
-                    <li><a href="./index.html">INÍCIO</a></li>
-                    <li><a href="./historia.html">HISTÓRIA</a></li>
-                    <li><a href="./personagens.html">PERSONAGENS</a></li>
-                    <li><a href="./games.html">GAMES</a></li>
-                    <li><a href="./autor.html">AUTOR</a></li>
-                </ul>
-                <a href="help.html" id="help"></a>
-            </div>
+            <img src="./img_common/logo.png" id="logo">
+            <ul>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./historia.html">HISTÓRIA</a></li>
+                <li><a href="./personagens.html">PERSONAGENS</a></li>
+                <li><a href="./games.html">GAMES</a></li>
+                <li><a href="./autor.html">AUTOR</a></li>
+            </ul>
+            <a href="help.html" id="help"></a>
+        </div>
 
 
         <div class="container">
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <canvas id="cosmo_seiya" style="margin-left: 17%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                <div id="seiya">
+                </div>                
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <canvas id="cosmo_shiryu" style="margin-left: 17%; display: block; width: 512px; height: 256px;"></canvas>
+                <div id="shiryu">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <canvas id="cosmo_hyoga" style="margin-left: 17%; display: block; width: 512px; height: 256px;"></canvas>
+                <div id="hyoga">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <div id="shun">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <div id="ikki">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <div id="marin">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <div id="shina">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <div id="jamian">
+                </div>
             </div>
-            <div class="box-personagem box" id="box_movement">
+            <div class="box-personagem">
+                <div id="dante">
+                </div>
             </div>
-        </div>
+            <div class="box-personagem">
+                <div id="kapela">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="misty">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="shiva">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="agora">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="mu">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="aldebaran">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="saga">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="mdm">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="aioria">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="shaka">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="dohko">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="milo">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="aioros">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="shura">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="camus">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="afrodite">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="aco">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="athena">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="poseidon">
+                </div>
+            </div>
+            <div class="box-personagem">
+                <div id="hades">
+                </div>
+            </div>
     </div>
+</div>
+<script>
+var presets = window.chartColors;
+		var utils = Samples.utils;
+		var inputs = {
+			min: 100,
+			max: 500,
+		};
 
+		var label = ['Soco', 'Chute', 'Técnica', 'Conhecimento', 'Cosmos'];
+		var seiya_data = [500, 200, 200, 300, 400];
+		var shiryu_data = [400, 200, 400, 200, 300];
+		var hyoga_data = [500, 300, 200, 200, 500];
+
+		var chart = new Chart('cosmo_seiya', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,0,0,0.5)',
+					borderColor: '#FF0000',
+					data: seiya_data,
+					label: 'Seiya'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+
+		var chart = new Chart('cosmo_shiryu', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(34,139,34,0.5)',
+					borderColor: '#228B22',
+					data: shiryu_data,
+					label: 'Shiryu'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+		var chart = new Chart('cosmo_hyoga', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(0,255,255,0.5)',
+					borderColor: '#00FFFF',
+					data: hyoga_data,
+					label: 'Hyoga'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+</script>
 </body>
 
 </html>

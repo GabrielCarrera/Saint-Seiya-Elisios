@@ -4,7 +4,7 @@ body{
 .navbar{
     width: 100%;
     height: 80px;
-    background: linear-gradient(90deg, rgba(127,143,201,1) 0%, rgba(61,81,172,1) 18%, rgba(24,42,117,1) 43%, rgba(2,24,116,1) 64%);
+    background: linear-gradient(90deg, rgba(127,143,201,1) 3%, rgba(101,124,227,1) 30%, rgba(24,42,117,1) 55%, rgba(2,24,116,1) 82%);
 }
 #logo{
     float: left;
@@ -92,7 +92,7 @@ body{
 
 .description{
     float: left;
-    background: url(../img_common/fundo.jpg) center center fixed;
+    background: url(../img_common/fundo.gif) center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -111,7 +111,7 @@ body{
 .cadastro_box{
     display: inline-block;
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 17%;
     margin-bottom: 10%;
     width: 70%;
     height: 600px;

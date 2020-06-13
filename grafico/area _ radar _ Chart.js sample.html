@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.chartjs.org/samples/latest/charts/area/radar.html -->
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OVOMALTINE</title>
+	<link rel="stylesheet" type="text/css" href="./area _ radar _ Chart.js sample_files/style.css">
+	<script async="" src="./area _ radar _ Chart.js sample_files/analytics.js.transferir"></script>
+	<script src="./area _ radar _ Chart.js sample_files/Chart.min.js.transferir"></script>
+	<script src="./area _ radar _ Chart.js sample_files/utils.js.transferir"></script>
+	<script src="./area _ radar _ Chart.js sample_files/analyser.js.transferir"></script>
+	<style type="text/css"></style>
+</head>
+
+<body>
+
+
+	<script>
+		var presets = window.chartColors;
+		var utils = Samples.utils;
+		var inputs = {
+			min: 100,
+			max: 500,
+		};
+
+		var label = ['Soco', 'Chute', 'Técnica', 'Conhecimento', 'Cosmos'];
+		var seiya_data = [500, 200, 200, 300, 400];
+		var shiryu_data = [400, 200, 400, 200, 300];
+		var hyoga_data = [500, 300, 200, 200, 500];
+
+		var chart = new Chart('seiya', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,0,0,0.5)',
+					borderColor: '#FF0000',
+					data: seiya_data,
+					label: 'Seiya'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+
+		var chart = new Chart('shiryu', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(34,139,34,0.5)',
+					borderColor: '#228B22',
+					data: shiryu_data,
+					label: 'Shiryu'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+		var chart = new Chart('hyoga', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(0,255,255,0.5)',
+					borderColor: '#00FFFF',
+					data: hyoga_data,
+					label: 'Hyoga'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+
+	</script>
+
+
+</body>
+
+</html>
