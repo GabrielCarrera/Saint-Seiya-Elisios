@@ -120,32 +120,25 @@ h3{
 .perfil_box{
     display: inline-block;
     margin-top:3%;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-bottom: 10%;
-    width: 80%;
+    width: 70%;
     height: 500px;
     background-color: rgba(255,255,255,0.5);
     border: rgba(61,81,172,1) 3px solid;
     overflow-x: hidden;
     transition: 0.3s;
 }
-.formulario{
-    text-align: center ;
-    font-size: 25px;
-    margin-top: 22%;
+.informacoes_perfil{
+    font-size: large;
+    float: left;
+    height: 35%;
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 10px;
 }
-.answer{
-    height: 20%;
-    font-size: 25px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 5px;
-}
-.button{
-    float: right;
-    height: 30px;
-    width: 25%;
-    border-radius: 5px;
-    margin-right: 38%;
-    cursor: pointer;
+.resultado{
+    margin-top: 25%;
+    float: left;
+    padding: 10px;
 }
