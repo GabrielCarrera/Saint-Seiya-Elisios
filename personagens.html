@@ -33,132 +33,166 @@
             <ul>
                 <li><a href="./index.html">INÍCIO</a></li>
                 <li><a href="./historia.html">HISTÓRIA</a></li>
-                <li><a href="./personagens.html">PERSONAGENS</a></li>
+                <li><a href="#">PERSONAGENS</a></li>
                 <li><a href="./games.html">GAMES</a></li>
                 <li><a href="./autor.html">AUTOR</a></li>
             </ul>
             <a href="help.html" id="help"></a>
         </div>
 
-
+       
         <div class="container">
-            <div class="box-personagem">
-                <canvas id="cosmo_seiya" style="margin-left: 17%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+            <select onchange="escolha()" id="classe_cav">
+                <option value="">--Selecione a classe--</option>
+                <option value="1">Bronze</option>
+                <option value="2">Prata</option>
+                <option value="3">Ouro</option>
+                <option value="4">Outros</option>
+                <option value="5">Todos</option>
+            </select>
+            <div class="personagem" id="bronze">
+                <canvas id="cosmo_seiya" style="margin-left: 16%; display: block; width: 512px; height: 256px; float: left;"></canvas>
                 <div id="seiya">
                 </div>                
             </div>
-            <div class="box-personagem">
-                <canvas id="cosmo_shiryu" style="margin-left: 17%; display: block; width: 512px; height: 256px;"></canvas>
+            <div class="personagem" id="bronze">
+                <canvas id="cosmo_shiryu" style="margin-left: 16%; display: block; width: 512px; height: 256px; float: left;"></canvas>
                 <div id="shiryu">
                 </div>
             </div>
-            <div class="box-personagem">
-                <canvas id="cosmo_hyoga" style="margin-left: 17%; display: block; width: 512px; height: 256px;"></canvas>
+            <div class="personagem" id="bronze">
+                <canvas id="cosmo_hyoga" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
                 <div id="hyoga">
                 </div>
             </div>
-            <div class="box-personagem">
+            <div class="personagem" id="bronze">
+                <canvas id="cosmo_shun" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
                 <div id="shun">
                 </div>
             </div>
-            <div class="box-personagem">
+            <div class="personagem" id="bronze">
+                <canvas id="cosmo_ikki" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
                 <div id="ikki">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="marin">
+            <div class="personagem" id="prata">
+                <canvas id="cosmo_marin" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="marin">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="shina">
+            <div class="personagem" id="prata">
+                <canvas id="cosmo_shina" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="shina">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="jamian">
+            <div class="personagem" id="prata">
+                <canvas id="cosmo_jamian" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="jamian">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="dante">
+            <div class="personagem" id="prata"> 
+                <canvas id="cosmo_dante" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="dante">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="kapela">
+            <div class="personagem" id="prata">
+                <canvas id="cosmo_kapela" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="kapela">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="misty">
+            <div class="personagem" id="prata">
+                <canvas id="cosmo_misty" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="misty">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="shiva">
+            <div class="personagem" id="prata"> 
+                <canvas id="cosmo_shiva" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="shiva">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="agora">
+            <div class="personagem" id="prata">
+                <canvas id="cosmo_agora" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="agora">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="mu">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_mu" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="mu">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="aldebaran">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_aldebaran" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="aldebaran">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="saga">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_saga" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="saga">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="mdm">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_mdm" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="mdm">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="aioria">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_aioria" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="aioria">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="shaka">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_shaka" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="shaka">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="dohko">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_dohko" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="dohko">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="milo">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_milo" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="milo">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="aioros">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_aioros" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="aioros">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="shura">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_shura" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="shura">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="camus">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_camus" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="camus">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="afrodite">
+            <div class="personagem" id="ouro">
+                <canvas id="cosmo_afrodite" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="afrodite">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="aco">
+            <div class="personagem" id="outros">
+                <canvas id="cosmo_aco" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="aco">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="athena">
+            <div class="personagem" id="outros">
+                <canvas id="cosmo_athena" style="margin-left: 9%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="athena">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="poseidon">
+            <div class="personagem" id="outros">
+                <canvas id="cosmo_poseidon" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="poseidon">
                 </div>
             </div>
-            <div class="box-personagem">
-                <div id="hades">
+            <div class="personagem" id="outros">
+                <canvas id="cosmo_hades" style="margin-left: 14%; display: block; width: 512px; height: 256px; float: left;"></canvas>
+                 <div id="hades">
                 </div>
             </div>
     </div>
@@ -174,8 +208,34 @@ var presets = window.chartColors;
 		var label = ['Soco', 'Chute', 'Técnica', 'Conhecimento', 'Cosmos'];
 		var seiya_data = [500, 200, 200, 300, 400];
 		var shiryu_data = [400, 200, 400, 200, 300];
-		var hyoga_data = [500, 300, 200, 200, 500];
-
+        var hyoga_data = [500, 300, 200, 200, 500];
+        var shun_data = [200, 200, 500, 400, 200];
+        var ikki_data = [500, 200, 400, 400, 300];
+        var marin_data = [400, 500, 100, 200, 200];
+		var shina_data = [400, 200, 400, 200, 100];
+        var jamian_data = [300, 200, 100, 200, 300];
+        var dante_data = [300, 300, 200, 200, 300];
+        var kapela_data = [300, 200, 300, 300, 300];
+        var misty_data = [300, 300, 400, 400, 400];
+        var shiva_data = [300, 300, 400, 400, 400];
+        var agora_data = [200, 200, 200, 200, 300];
+		var mu_data = [300, 200, 300, 500, 500];
+        var aldebaran_data = [500, 200, 100, 300, 500];
+        var saga_data = [500, 200, 200, 500, 500];
+		var mdm_data = [400, 300, 100, 500, 300];
+        var aioria_data = [500, 200, 200, 200, 100];
+        var shaka_data = [400, 300, 200, 500, 500];
+		var dohko_data = [500, 500, 500, 500, 400];
+		var milo_data = [500, 300, 300, 500, 300];
+        var aioros_data = [500, 500, 500, 200, 500];
+        var shura_data = [500, 500, 100, 100, 500];
+        var camus_data = [500, 200, 100, 500, 300];
+		var afrodite_data = [300, 300, 500, 500, 200];
+        var aco_data = [400, 300, 300, 200, 300];
+        var athena_data = [100, 100, 100, 500, 100];
+        var poseidon_data = [100, 100, 400, 500, 500];
+        var hades_data = [300, 100, 500, 500, 500];
+	
 		var chart = new Chart('cosmo_seiya', {
 			type: 'radar',
 			data: {
@@ -184,7 +244,7 @@ var presets = window.chartColors;
 					backgroundColor: 'rgba(255,0,0,0.5)',
 					borderColor: '#FF0000',
 					data: seiya_data,
-					label: 'Seiya'
+					label: 'Seiya (Pegasus)'
 				}]
 			},
 			options: {
@@ -197,8 +257,6 @@ var presets = window.chartColors;
 				},
 			}
 		});
-
-
 		var chart = new Chart('cosmo_shiryu', {
 			type: 'radar',
 			data: {
@@ -207,7 +265,175 @@ var presets = window.chartColors;
 					backgroundColor: 'rgba(34,139,34,0.5)',
 					borderColor: '#228B22',
 					data: shiryu_data,
-					label: 'Shiryu'
+					label: 'Shiryu (Dragão)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_hyoga', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(0,255,255,0.5)',
+					borderColor: '#00FFFF',
+					data: hyoga_data,
+					label: 'Hyoga (Cisne)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_shun', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,0,255,0.5)',
+					borderColor: '#FF00FF',
+					data: shun_data,
+					label: 'Shun (Andrômeda)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_ikki', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,140,0,0.5)',
+					borderColor: '#FF8C00',
+					data: ikki_data,
+					label: 'Ikki (Fênix)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_marin', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+                    backgroundColor: 'rgba(176,196,222,0.5)',
+                    borderColor: '#B0C4DE',
+					data: marin_data,
+					label: 'Marin (Águia)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_shina', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(176,196,222,0.5)',
+					borderColor: '#B0C4DE',
+					data: shina_data,
+					label: 'Shina (Cobra)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_jamian', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(176,196,222,0.5)',
+					borderColor: '#B0C4DE',
+					data: jamian_data,
+					label: 'Jamian (Corvo)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_dante', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+                    backgroundColor: 'rgba(176,196,222,0.5)',					
+                    borderColor: '#B0C4DE',
+					data: dante_data,
+					label: 'Dante (Cérbero)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_kapela', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+                    backgroundColor: 'rgba(176,196,222,0.5)',					
+                    borderColor: '#B0C4DE',
+					data: kapela_data,
+					label: 'Kapela (Auriga)'
 				}]
 			},
 			options: {
@@ -221,15 +447,15 @@ var presets = window.chartColors;
 			}
 		});
 
-		var chart = new Chart('cosmo_hyoga', {
+        var chart = new Chart('cosmo_misty', {
 			type: 'radar',
 			data: {
 				labels: label,
 				datasets: [{
-					backgroundColor: 'rgba(0,255,255,0.5)',
-					borderColor: '#00FFFF',
-					data: hyoga_data,
-					label: 'Hyoga'
+                    backgroundColor: 'rgba(176,196,222,0.5)',					
+                    borderColor: '#B0C4DE',
+					data: misty_data,
+					label: 'Misty (Lagarto)'
 				}]
 			},
 			options: {
@@ -242,6 +468,387 @@ var presets = window.chartColors;
 				},
 			}
 		});
+		var chart = new Chart('cosmo_shiva', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(176,196,222,0.5)',
+					borderColor: '#B0C4DE',
+					data: shiva_data,
+					label: 'Shiva (Pavão)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_agora', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(176,196,222,0.5)',
+					borderColor: '#B0C4DE',
+					data: agora_data,
+					label: 'Ágora (Lótus)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_mu', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: mu_data,
+					label: 'Mú (Áries)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_aldebaran', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: aldebaran_data,
+					label: 'Aldebaran (Touro)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+        var chart = new Chart('cosmo_saga', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: saga_data,
+					label: 'Saga (Gêmeos)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_mdm', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: mdm_data,
+					label: 'Máscara da morte (Câncer)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_aioria', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: aioria_data,
+					label: 'Aioria (Leão)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_shaka', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: shaka_data,
+					label: 'Shaka (Virgem)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_dohko', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: dohko_data,
+					label: 'Dohko (Libra)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
+        var chart = new Chart('cosmo_milo', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: milo_data,
+					label: 'Milo (Escorpião)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_aioros', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: aioros_data,
+					label: 'Aioros (Sagitário)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_shura', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: shura_data,
+					label: 'Shura (Capricórnio)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_camus', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: camus_data,
+					label: 'Camus (Aquário)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_afrodite', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(255,255,0,0.5)',
+					borderColor: '#FFD700',
+					data: afrodite_data,
+					label: 'Afrodite (Peixes)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_aco', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(112,128,144,0.5)',
+					borderColor: '#708090',
+					data: aco_data,
+					label: 'Usho, Sho e Daichi (Aço)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+		var chart = new Chart('cosmo_athena', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(75,0,130,0.5)',
+					borderColor: '#4B0082',
+					data: athena_data,
+					label: 'Athena (Saori Kido)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_poseidon', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(75,0,130,0.5)',
+					borderColor: '#4B0082',
+					data: poseidon_data,
+					label: 'Poseidon (Julian Solo)'
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+        });
+        var chart = new Chart('cosmo_hades', {
+			type: 'radar',
+			data: {
+				labels: label,
+				datasets: [{
+					backgroundColor: 'rgba(75,0,130,0.5)',
+					borderColor: '#4B0082',
+					data: hades_data,
+					label: 'Hades   '
+				}]
+			},
+			options: {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.0001
+					}
+				},
+			}
+		});
+
 
 </script>
 </body>

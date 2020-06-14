@@ -7,7 +7,7 @@
     <title>Saint Seiya - Autor</title>
     <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/help.css">
-    <script src="./js/nav.js"></script>
+    <script src="./js/help.js"></script>
 </head>
 
 <body>
@@ -35,9 +35,27 @@
             <a href="#" id="help"></a>
         </div>
 
-
         <div class="container">
             <div class="help_box" id="help_box_movement">
+                <div id="duvidas"></div>
+                <div id="gif"></div>
+                <h2>Nos mande um e-mail, te responderemos em breve</h2>
+                <p>&emsp;Qualquer dúvida e informação que queira saber sobre o Universo de Saint Seiya, escolha uma aba e nos
+                    envie sua pergunta, esse site foi desenvolvido de fã para fã e para qualquer um que gostaria de
+                    conhecer sobre essa obra triunfal e um pouco sobre o consagrado criador da obra Masami Kurumada.
+                    Sinta-se à vontade de nos contactar.</p>
+                <form action="help.html">
+                <select id="caixa_msg" required>
+                    <option value=""  >--Selecione um campo--</option>
+                    <option value="1"required>Sugestão</option>
+                    <option value="2" required>Dúvidas</option>
+                    <option value="3" required>Reclamações</option>
+                </select>
+               <label for="email">
+                  <h3>E-mail:</h3>  <br><input type="email" id="v_email" placeholder="Digite aqui o seu email" required>
+                <textarea placeholder="Digite aqui sua mensagem..." cols="30" rows="10"  required></textarea>
+                    <input type="submit" value="Enviar" id="confirmar">
+                </label></form>
             </div>
         </div>
     </div>

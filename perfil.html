@@ -7,7 +7,35 @@
     <title>Saint Seiya - Perfil</title>
     <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/perfil.css">
-    <script src="./js/nav.js"></script>
+    <script src="./js/perfil.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+
+    <style>
+        #s_leitura {
+            font-size: 30pt;
+            font-weight: bold;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .leitura-ok {
+            background: rgb(59, 146, 59);
+            color: white;
+        }
+
+        .leitura-baixa {
+            background: rgb(47, 67, 134);
+            color: rgb(245, 245, 248);
+        }
+
+        .leitura-alta {
+            background: rgb(190, 51, 51);
+            color: rgb(240, 238, 133);
+        }
+    </style>
+
+</head>
 </head>
 
 <body>
@@ -37,17 +65,24 @@
 
 
         <div class="container">
-            <div class="box" id="box_movement">
-                <img src="./img_common/tema.png" class="tema_box">
-                <form action="perfil.html" class="formulario">
-                    E-mail: <br>
-                    <input type="email" placeholder="Insira seu e-mail" class="answer" required> <br>
-                    Senha: <br>
-                    <input type="password" placeholder="Insira sua senha" class="answer" required>
-                    <br>
-                    <input type="submit" value="Entrar" class="button">
-                </form>
-                <a href="cadastrar.html"><button class="button">Cadastre-se</button></a>
+            <div class="perfil_box" id="box_movement">
+                <div id="foto_perfil"></div>
+                <div id="informacoes_perfil">
+                    Nome: <span id="nome"></span>
+                    Idade:
+                    Data Nascimento:
+                </div>
+                <div id="resultado">
+                    Última leitura: <br><br>
+                    <span id="s_leitura">
+                        <b id="b_leitura">?</b>ºC
+                    </span>
+                    <img id="i_status" style="height: 60px;">
+                    <br><br><br>
+                    Mínimo: <b id="b_min"></b> <br>
+                    Máximo: <b id="b_max"></b> <br>
+                </div>
+                
             </div>
         </div>
     </div>
