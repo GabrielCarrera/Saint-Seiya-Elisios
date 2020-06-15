@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/perfil.css">
     <script src="./js/perfil.js"></script>
-    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
-    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js" ></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js" ></script>
 
     <style>
         #s_leitura {
@@ -67,27 +67,101 @@
         <div class="container">
             <div class="perfil_box" id="box_movement">
                 <div id="foto_perfil"></div>
+                <img src="./img_common/perfil.png" class="banner">
                 <div class="informacoes_perfil">
-                    Nome: <span id="nome"></span><br>
+                    
+                    Nome: <span id="nome">Gabriel</span><br>
                     Idade: <span id="idade"></span><br>
                     Data Nascimento: <span id="dt"></span><br>
                     Signo: <span id="signo"></span><br>
                 </div>
                 <div class="resultado">
-                    Última leitura: <br><br>
+                    Temperatura do seu Cosmo: <br><br>
                     <span id="s_leitura">
                         <b id="b_leitura">?</b>ºC
                     </span>
-                    <img id="i_status" style="height: 60px;">
+                    <img id="i_status" style="height: 80px;">
                     <br><br><br>
-                    Mínimo: <b id="b_min"></b> <br>
-                    Máximo: <b id="b_max"></b> <br>
+                    Mínimo alcance do seu cosmo: <b id="b_min"></b> <br>
+                    Máximo alcance do seu cosmo: <b id="b_max"></b> <br>
+                </div><img src="" id="aleatorio" width="200px">
+                <div id="grafico">
+                    
+                    <canvas id="usu" width="80" height="80" class="chartjs-render-monitor"
+                        style="display: block; width: 200px; height: 200px; float: right;"></canvas>
                 </div>
-                
             </div>
         </div>
     </div>
 
+    <script>
+        var presets = window.chartColors;
+        var utils = Samples.utils;
+        var inputs = {
+            min: 1,
+            max: 5,
+        };
+
+
+        var r_soco = parseInt(Math.random() * 500) + 100;
+        var r_chute = parseInt(Math.random() * 500) + 100;
+        var r_tec = parseInt(Math.random() * 500) + 100;
+        var r_con = parseInt(Math.random() * 500) + 100;
+        var r_cosmo = parseInt(Math.random() * 500) + 100;
+        var usu_data = [r_soco, r_chute, r_tec, r_con, r_cosmo];
+
+        var media = 0;
+        setInterval(function () {
+            r_soco = parseInt(Math.random() * 500) + 100;
+            r_chute = parseInt(Math.random() * 500) + 100;
+            r_tec = parseInt(Math.random() * 500) + 100;
+            r_con = parseInt(Math.random() * 500) + 100;
+            r_cosmo = parseInt(Math.random() * 500) + 100;
+            media = parseInt((r_soco + r_chute + r_tec + r_con + r_cosmo) / 5);
+            usu_data.shift();
+            usu_data.shift();
+            usu_data.shift();
+            usu_data.shift();
+            usu_data.shift();
+
+            usu_data.push(r_soco, r_chute, r_tec, r_con, r_cosmo);
+
+            window.chart.update();
+            if (media <= 300) {
+				aleatorio.src = './img_common/espectro.png'
+			} else if (media <= 500) {
+				aleatorio.src = './img_common/taca.png'
+			} else {
+				aleatorio.src = './img_common/poseidon.png'
+			}
+
+		}, 5000);
+
+        var label = ['Soco', 'Chute', 'Técnica', 'Conhecimento', 'Cosmos'];
+
+        var chart = new Chart('usu', {
+            type: 'radar',
+            data: {
+                labels: label,
+                datasets: [{
+                    backgroundColor: 'rgba(255,0,0,0.5)',
+                    borderColor: '#FF0000',
+                    data: usu_data,
+                    label: 'Seus pontos'
+                }]
+            },
+            options: {
+                maintainAspectRatio: true,
+                spanGaps: false,
+                elements: {
+                    line: {
+                        tension: 0.0001
+                    }
+                },
+            }
+        });
+
+    </script>
 </body>
 
 </html>
