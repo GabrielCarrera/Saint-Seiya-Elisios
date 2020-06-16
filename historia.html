@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Seiya - Personagens</title>
+    <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/historia.css">
+    <script src="./js/hist.js"></script>
+
+</head>
+
+<body>
+    <div class="description">
+        <div class="sidebar" id="mysidebar">
+            <a href="#" class="closebtn" onclick="closenav()">x</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="login.html">Login</a>
+            <a href="cadastrar.html">Cadastre-se</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+        <div class="navbar" id="mynavbar">
+            <div class="header">
+                <a class="opennav" onclick="opennav()">☰</a>
+            </div>
+            <img src="./img_common/logo.png" id="logo">
+            <ul>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./historia.html">HISTÓRIA</a></li>
+                <li><a href="#">PERSONAGENS</a></li>
+                <li><a href="./games.html">GAMES</a></li>
+                <li><a href="./autor.html">AUTOR</a></li>
+            </ul>
+            <a href="help.html" id="help"></a>
+        </div>
+
+
+        <div class="container">
+            <select onchange="escolha()" id="tipo_conteudo">
+                <option value="">--Selecione o conteúdo--</option>
+                <option value="1">Anime</option>
+                <option value="2">Mangá</option>
+            </select>
+            <div class="introducao box" id="box_intro" style="display: block;">
+                <div id="protagonistas"></div>
+                <h2 id="intro">Introdução ao Universo</h2>
+                <p id="intro">
+                    Fala cavaleiro, aqui nessa aba, você poderá conhecer um pouco sobre a história que rola no universo
+                    de Saint Seiya. Temos histórias maravilhosas e seus encantadores Spin-off, sempre vale ressaltar o
+                    quão grande e influente foi e é Masami Kurumada, autor da obra. Ele é muito querido e apesar de ter
+                    todo esse valioso mundo de mitologia e cavaleiros, faz seu trabalho com amor e carinho, aqui
+                    listamos algumas das séries que foram feitas por ele, outras que teve direção e apenas
+                    supervisionamento. Espero que se divirta e goste cada vez mais dessas obras e, caso já conheça,
+                    também veja, podem ter detalhes nos quais nunca tinha ouvido falar!
+                </p>
+            </div>
+            <div class="anime box" id="box_anime" style="display: none;">
+                <div id="classico"></div>
+                <h2>Saga do Santuário</h2>
+                <p>&emsp;A Lenda nos diz que os Cavaleiros sempre aparecem quando as forças do mal tentam apoderar-se do
+                    mundo. Numa era longínqua, existia um grupo de jovens que protegiam Atena, a Deusa da Guerra. Eram
+                    chamados de os Cavaleiros de Atena e sempre combatiam sem armas. Conta-se que com um movimento de
+                    mão, eles eram capazes de rasgar o céu e de que apenas um pontapé, abriam fendas na terra. Hoje, de
+                    novo um grupo de cavaleiros, com o mesmo poder e idêntica coragem, chegou à Terra. Com essa
+                    introdução autoexplicativa, começamos a ouvir pela primeira vez a respeito das lendas e histórias
+                    que cercam o mito destes Heróis da antiguidade e que chegaram aos tempos modernos.
+                    A adaptação para anime é baseada no mangá de mesmo título, seguindo o mesmo enredo. Produzido pela
+                    Toei Animation, teve sua estreia no Japão no canal de TV Asahi em outubro de 1986 e durou até 1989.
+                    Foi dirigido por Kōzō Morishita (episódios 1–73) e Kazuhito Kikuchi (episódios 74–114). Os
+                    desenhistas da obra foram Shingo Araki e Michi Himeno, com trilha sonora composta por Seiji
+                    Yokoyama. Os escritores responsáveis por adaptar a história de Kurumada foram Takao Koyama e
+                    Yoshiyuki Suga. A série do anime possui quatro sagas: Santuário (episódios 1–73); Asgard,
+                    exclusiva do anime (episódios 74–99), Poseidon (episódios 100–114), e Hades (episódios 115-145)</p>
+                <hr>
+                <div id="canvas"></div>
+                <h2>Lost Canvas</h2>
+                <p>&emsp;Ainda em 2006, outra série de mangá prequela chamada de Saint Seiya: The Lost Canvas começou a
+                    ser
+                    publicada, contando uma interpretação alternativa da Guerra Santa que ocorreu no século XVIII. Assim
+                    como Saint Seiya: Next Dimension, é publicada na revista Shōnen Champion, com desenho e história de
+                    Shiori Teshirogi e supervisão de Kurumada. O mangá foi finalizado no capítulo 223, com 25 volumes,
+                    em abril de 2011. Porém, na edição da Shonen Champion semanal, que lançou o último capítulo, foi
+                    revelado que a série continuaria com mini-sagas dos cavaleiros de ouro. Lost Canvas é um mangá não
+                    canônico, portanto não é considerado na história original. No dia 1 de dezembro de 2008, foi
+                    anunciado mundialmente pela revista Shonen Champion que Masami Kurumada, em parceria com a Tokyo
+                    Movie Shinsha, iria produzir episódios animados baseados no mangá. Os episódios, no formato de
+                    Original Video Animation (Ova), foram lançados diretamente em DVD a partir do dia 24 de junho de
+                    2009.</p>
+                <hr>
+                <div id="omega"></div>
+                <h2>Omega</h2>
+                <p>&emsp;Uma nova série de anime da Toei Animation, com o nome Saint Seiya Ω, começou a ser exibida em
+                    abril
+                    de 2012. É uma história original (spin off ou gaiden), que não segue a continuidade do mangá de
+                    Kurumada. A história se passa 25 anos após a série original (se passando por volta de 2012),
+                    contando a história de Kouga, uma criança que foi criada por Saori Kido e treinado por Shaina de
+                    Ophiuco para se tornar o cavaleiro de Pégaso. Nessa era, Seiya, Shun, Shiryu, Hyoga e Ikki são
+                    considerados cavaleiros lendários e Seiya, apesar de ter sumido anos atrás, é conhecido como o maior
+                    dos lendários cavaleiros. Quando Kouga era bebê, houve uma guerra contra o deus Marte (Ares, deus da
+                    Guerra, para os romanos), onde saíram-se vitoriosos, porém Seiya sumiu na batalha final, Shiryu
+                    perdeu os cinco sentidos, além de todos (incluindo Saori) terem sido corrompidos por um cosmo negro
+                    que corrói aquele que usa cosmo. Uma das novidades na série são elementos naturais do cosmo: água,
+                    terra, fogo, ar, raio, luz, sombra/trevas; para ser um cavaleiro, não basta ter e saber usar o cosmo
+                    sabiamente, deve-se aprender a usar seu elemento cósmico. Cada um dos seis protagonistas do anime
+                    possuem elementos diferentes. Outra alteração é o design das armaduras, muito diferente das vistas
+                    em qualquer outra saga de Cavaleiros, tendo partes da armadura (principalmente as golas) feitas,
+                    aparentemente, de tecido. As urnas das Armaduras também foram transformadas nas Cloth Stone, que são
+                    pequenas pedras que invocam as armaduras para o cavaleiro.</p>
+                <hr>
+                <div id="sho"></div>
+                <h2>Saintia Shô</h2>
+                <p>&emsp;A série apresenta uma nova classe de guerreiras de Athena, conhecidas como Saintia,
+                    diferentes das guerreiras que apareciam no trabalho de Kurumada, chamadas de Amazonas, no original.
+                    As Saintia são a Guarda pessoal de proteção à Athena e as únicas entre as Amazonas a não usar
+                    máscaras. Elas só são vistas protegendo a Deusa, por isso são consideradas lendas para os outros
+                    Cavaleiros.
+                    &emsp;A história de Saintia Sho, que tem como personagem principal Shōko, uma jovem sem treinamento
+                    que
+                    acaba se tornando a Saintia de Cavalo Menor, além de ter uma importante conexão com a deusa Éris e
+                    seu retorno, acontece em paralelo com a trama dos cavaleiros de bronze/ouro. Ou seja, Seiya continua
+                    como o cavaleiro de Pégaso ao lado de seus companheiros, os Cavaleiros de Ouro continuam guardando
+                    suas casas no santuário e toda essa parte das histórias clássicas continua sem alteração. A ideia
+                    não é substituir os cavaleiros clássicos ou a história que já existe, mas sim mostrar uma trama
+                    paralela a história principal. O enredo começa antes da Guerra Galática em um conflito com Éris e
+                    suas guerreiras, as Dríades, enquanto que o segundo arco inicia o conflito entre Saori Kido e o
+                    Grande Mestre.
+                    Tudo começa após Eris retornar à vida após a Maçã Dourada ser trazida à Terra pelo cometa Repulse.
+                    Éris, então, escolhe o corpo de Shoko para sua reencarnação. Porém, para proteger sua irmã, é Kyoko
+                    quem acaba sendo a hospedeira de Eris.</p>
+                <hr>
+                <div id="soul"></div>
+                <h2>Soul of Gold</h2>
+                <p>&emsp;Em 2014, foi confirmada pela Toei animation a produção de uma nova série para TV: Saint Seiya:
+                    Soul
+                    of Gold, uma nova história focada nos Cavaleiros de Ouro que se passa em Asgard, após os eventos da
+                    fase inferno da saga de Hades. O protagonista da saga é Aiolia de Leão e as armaduras de ouro são
+                    reveladas em suas versões Divinas, como aconteceu com as armaduras de bronze nos Campos Elísios, na
+                    batalha contra Hypnos e Thanatos. Depois de sacrificarem suas vidas para destruir o Muro das
+                    Lamentações com a estratégia de Dohko para ajudar os Cavaleiros de Bronze, os doze Cavaleiros de
+                    Ouro são revividos, com um novo inimigo esperando por eles em Asgard, onde terão que lutar vestindo
+                    suas novas armaduras de Ouro.</p>
+            </div>
+            <div class="manga box" id="box_manga" style="display: none;">
+                <div id="m_classico"></div>
+                <h2>Clássico</h2>
+                <p>&emsp;O enredo se concentra em um órfão chamado Seiya, forçado a ir ao Santuário na Grécia para obter
+                    a Armadura de Bronze de Pégaso, uma veste usada pelos 88 guerreiros da deusa grega Athena,
+                    conhecidos como Cavaleiros.
+                    Após despertar o poder dos Cavaleiros, que é uma essência espiritual chamada de Cosmo (que se
+                    originou com o Big Bang), Seiya rapidamente se torna o Cavaleiro de Pégaso e retorna ao Japão para
+                    encontrar sua irmã mais velha, pois esta havia desaparecido no mesmo dia em que ele foi ao
+                    Santuário. Saori Kido - a neta do homem responsável por enviar os órfãos para o treinamento - fez um
+                    trato com Seiya, pedindo para que participe de um torneio chamado de Guerra Galática, onde o
+                    vencedor dentre os cavaleiros de bronze receberia a Armadura de Ouro de Sagitário. O trato era que
+                    se Seiya vencesse o torneio, Saori ajudaria na busca por sua irmã.</p>
+                <hr>
+                <div id="m_next"></div>
+                <h2>Next Dimension</h2>
+                <p>&emsp;Em 2006, Kurumada deu continuidade à história de Saint Seiya com Saint Seiya: Next Dimension. A
+                    história continua, de forma oficial, com a Guerra Santa anterior entre as divindades do universo da
+                    série. Continuação canônica do mangá original de Saint Seiya, heróis do presente (Saori, Hyoga,
+                    Shiryu, Shun, Ikki) voltam no tempo (século XVIII) para salvar Seiya de Pégaso de sua morte
+                    iminente. A obra é publicada na revista Shōnen Champion e tem sua publicação por temporada -
+                    aproximadamente 8 capítulos sequenciados, mas volta a ficar em hiato por meses, sendo lançado o
+                    volume 12 no início de 2018 - sendo um mangá totalmente colorido, lançando praticamente um volume
+                    por ano.</p>
+                <hr>
+                <div id="m_episodiog"></div>
+                <h2>Episódio G</h2>
+                <p>&emsp;Durante 2002, um novo mangá chamado Saint Seiya: Episode.G começou a ser produzido. Sendo uma
+                    prequela, sua história acontece 7 anos antes dos eventos do mangá original e 6 anos após a morte do
+                    Cavaleiro de Ouro Aiolos de Sagitário, com Aiolia de Leão como protagonista. Durante a série, os
+                    Titãs são trazidos de volta à vida com a missão de recuperar sua terra, e os Cavaleiros de Ouro são
+                    enviados para impedi-los e proteger os humanos. Esta nova série de mangá é escrita por Masami
+                    Kurumada e desenhada por Megumu Okada. Os capítulos são publicados na Champion RED, tendo dezenove
+                    volumes já lançados até 2012, quando entrou em hiato, no ano previsto para a série ser finalizada.
+                </p>
+                <hr>
+                <div id="m_canvas"></div>
+                <h2>Lost Canvas</h2>
+                <p>&emsp;Ainda em 2006, outra série de mangá prequela chamada de Saint Seiya: The Lost Canvas começou a
+                    ser publicada, contando uma interpretação alternativa da Guerra Santa que ocorreu no século XVIII.
+                    Assim como Saint Seiya: Next Dimension, é publicada na revista Shōnen Champion, com desenho e
+                    história de Shiori Teshirogi e supervisão de Kurumada. O mangá foi finalizado no capítulo 223, com
+                    25 volumes, em abril de 2011. Porém, na edição da Shonen Champion semanal, que lançou o último
+                    capítulo, foi revelado que a série continuaria com mini-sagas dos cavaleiros de ouro. Lost Canvas é
+                    um mangá não canônico, portanto não é considerado na história original.</p>
+                <hr>
+                <div id="m_sho"></div>
+                <h2>Saintia Shô</h2>
+                <p>&emsp;Saint Seiya: Saintia Sho é um mangá escrito e ilustrado por Chimaki Kuori, publicado pela
+                    editora Akita Shoten na revista Champion Red. O mangá é um spin-off da série clássica Saint Seiya de
+                    autoria de Masami Kurumada.
+                    &emsp;Chimaki Kuori é conhecida pelo seu trabalho na adaptação em anime do mangá Gundam Wing.
+                    Saintia Sho começou a ser serializado substituindo o Episode.G que chegou ao seu final na revista
+                    Champion Red. Uma adaptação em anime foi anunciada pela Toei Animation. A animação é produzida pelo
+                    estúdio Gonzo, sob supervisão da Toei.[Em junho de 2013, foi anunciado um terceiro mangá spin-off
+                    (específico) de Saint Seiya, intitulado Saint Seiya: Saintia Sho. A publicação começou na edição
+                    de setembro da revista Champion Red. A série apresenta guerreiras conhecidas como Saintia
+                    (diferentes das que aparecem no trabalho de Kurumada, chamadas de, que é a Guarda pessoal de
+                    proteção à Athena, e conta com uma protagonista feminina, Shō. O mangá é de autoria de Chimaki
+                    Kuori, sob encomenda de Masami Kurumada. No dia 19 de dezembro de 2016 foi confirmado pela editora
+                    Akita Shoten, que a série Saintia Sho vai sair em
+                    anime.</p>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
