@@ -35,14 +35,14 @@ body{
     margin-right: 1%;
     height: 50px;
     cursor: pointer;
-    background: url('../img_common/help.png') center center;
+    background: url('../img/help.png') center center;
     outline: none;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
 }
 #help:hover{
-    background: url('../img_common/help_gold.png') center center;
+    background: url('../img/help_gold.png') center center;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
@@ -92,13 +92,13 @@ body{
 
 .description{
     float: left;
-    background: url(../img_common/fundo.gif) center center fixed;
+    background: url(../img/fundo.gif) center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
 #mysidebar{
-    background: url(../img_common/band.png) center;
+    background: url(../img/band.png) center;
     background-size: 160px;
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.5);
@@ -119,7 +119,7 @@ body{
     float: left;
     height: 100%;
     width: 30%;
-    background: url(../img_index/12-ouro.gif), url(../img_index/relogio.png);
+    background: url(../img/12-ouro.gif), url(../img/relogio.png);
     background-size: 98%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -148,7 +148,7 @@ h2{
 }
 .selecao{
     float: left;
-    background: url(../img_index/sim_seiya.gif);
+    background: url(../img/sim_seiya.gif);
     background-repeat: no-repeat;
     height: 40%;
     width: 15%;
@@ -170,7 +170,7 @@ h2{
 }
 .direita{
     float: left;
-    background: url(../img_index/nao_seiya.gif);
+    background: url(../img/nao_seiya.gif);
     background-repeat: no-repeat;
     height: 40%;
     width: 15%;

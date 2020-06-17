@@ -35,14 +35,14 @@ body{
     margin-right: 1%;
     height: 50px;
     cursor: pointer;
-    background: url('../img_common/help.png') center center;
+    background: url('../img/help.png') center center;
     outline: none;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
 }
 #help:hover{
-    background: url('../img_common/help_gold.png') center center;
+    background: url('../img/help_gold.png') center center;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
@@ -93,13 +93,13 @@ body{
 
 .description{
     float: left;
-    background: url(../img_common/fundo.gif) center center fixed;
+    background: url(../img/fundo.gif) center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
 #mysidebar{
-    background: url(../img_common/band.png) center;
+    background: url(../img/band.png) center;
     background-size: 160px;
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.5);
@@ -136,7 +136,7 @@ body{
     margin-bottom: 29%;
 }
 #protagonistas{
-    background: url(../img_historia/pegasus.png) center center ;
+    background: url(../img/pegasus.png) center center ;
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -173,7 +173,7 @@ hr{
     margin-left: 2%;
 }
 #classico{
-    background: url(../img_historia/classico_santuario.jpg) center center;
+    background: url(../img/classico_santuario.jpg) center center;
     background-repeat: no-repeat;
     background-size: 85%;
     height: 310px;
@@ -182,7 +182,7 @@ hr{
     margin-top: 25px;
 }
 #canvas{
-    background: url(../img_historia/lost_canvas.png) center center;
+    background: url(../img/lost_canvas.png) center center;
     background-repeat: no-repeat;
     background-size: 78%;
     height: 310px;
@@ -191,7 +191,7 @@ hr{
     margin-top: 25px;
 }
 #omega{
-    background: url(../img_historia/omega.jpg) center center;
+    background: url(../img/omega.jpg) center center;
     background-repeat: no-repeat;
     background-size: 82%;
     height: 310px;
@@ -200,7 +200,7 @@ hr{
     margin-top: 25px;
 }
 #sho{
-    background: url(../img_historia/saintia_sho.jpg) center center;
+    background: url(../img/saintia_sho.jpg) center center;
     background-repeat: no-repeat;
     background-size: 82%;
     height: 310px;
@@ -209,7 +209,7 @@ hr{
     margin-top: 25px;
 }
 #soul{
-    background: url(../img_historia/soul_of_gold.png) center center;
+    background: url(../img/soul_of_gold.png) center center;
     background-repeat: no-repeat;
     background-size: 84%;
     height: 310px;
@@ -222,7 +222,7 @@ hr{
 /* MANGÁS */
 
 #m_classico{
-    background: url(../img_historia/classico.jpg) center center;
+    background: url(../img/classico.jpg) center center;
     background-repeat: no-repeat;
     background-size: 84%;
     height: 310px;
@@ -232,7 +232,7 @@ hr{
     margin-top: 25px;
 }
 #m_next{
-    background: url(../img_historia/next_dimension.jpg) center center;
+    background: url(../img/next_dimension.jpg) center center;
     background-repeat: no-repeat;
     background-size: 84%;
     height: 310px;
@@ -242,7 +242,7 @@ hr{
     margin-top: 25px;
 }
 #m_episodiog{
-    background: url(../img_historia/g.jpg) center center;
+    background: url(../img/g.jpg) center center;
     background-repeat: no-repeat;
     background-size: 84%;
     height: 310px;
@@ -252,7 +252,7 @@ hr{
     margin-top: 25px;
 }
 #m_canvas{
-    background: url(../img_historia/lost.jpg) center center;
+    background: url(../img/lost.jpg) center center;
     background-repeat: no-repeat;
     background-size: 84%;
     height: 310px;
@@ -262,7 +262,7 @@ hr{
     margin-top: 25px;
 }
 #m_sho{
-    background: url(../img_historia/saintia.jpg) center center;
+    background: url(../img/saintia.jpg) center center;
     background-repeat: no-repeat;
     background-size: 84%;
     height: 310px;

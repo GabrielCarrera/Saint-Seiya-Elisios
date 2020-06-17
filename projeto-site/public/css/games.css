@@ -35,14 +35,14 @@ body{
     margin-right: 1%;
     height: 50px;
     cursor: pointer;
-    background: url('../img_common/help.png') center center;
+    background: url('../img/help.png') center center;
     outline: none;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
 }
 #help:hover{
-    background: url('../img_common/help_gold.png') center center;
+    background: url('../img/help_gold.png') center center;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
@@ -92,62 +92,85 @@ body{
 
 .description{
     float: left;
-    background: url(../img_common/fundo.gif) center center fixed;
+    background: url(../img/fundo.gif) center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
 #mysidebar{
-    background: url(../img_common/band.png) center;
+    background: url(../img/band.png) center;
     background-size: 160px;
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.5);
     background-position: bottom;
 }
-.tema_box{
-    float: left;
-    height: 119px;
-}
-.cadastro_box{
+.games_box{
     display: inline-block;
     margin-top: 10%;
-    margin-left: 17%;
+    margin-left: 10%;
     margin-bottom: 10%;
-    width: 70%;
-    height: 600px;
+    width: 80%;
+    height: 100%;
     background-color: rgba(255,255,255,0.5);
-    border: rgba(61,81,172,1) 3px solid;
+    border:rgba(61,81,172,1) 3px solid;
     overflow-x: hidden;
     transition: 0.3s;
 }
-.formulario{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10%;
-}
-.frmCadastro{
-    width: 10%;
-    font-size: 20px;
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-h3{
-    margin-bottom: 0px;
-    margin-top: 15px;
-    font-size: 30px;
-}
-.answer{
-    font-size: 25px;
-    width: 98%;
-    border-radius: 5px;
-}
-.button{
+.games_foto{
     float: left;
-    height: 30px;
-    width: 100px;
-    border-radius: 5px;
-    margin-left: 46%;
-    margin-top: 10px;
-    cursor: pointer;
+    height: 350px;
+    width: 255px;
+    background: url(../img/santuario-ps2.jpg);
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10%;
+}
+.ps2{
+    background: url(../img/hades-ps2.jpg);
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ps3-1{
+    background: url(../img/santuario-ps3.jpg);
+    background-size: 114%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ps3-2{
+    background: url(../img/bravos-ps3.jpg);
+    background-size: 114%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ps3-3{
+    background: url(../img/alma-ps3.jpg);
+    background-size: 114%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ps4{
+    background: url(../img/alma-ps4.jpg);
+    background-size: 111%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.psp{
+    background: url(../img/psp.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.titulo{
+    text-transform: uppercase;
+}
+p{
+    font-size: 20px;
+}
+hr{
+    width: 95%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }

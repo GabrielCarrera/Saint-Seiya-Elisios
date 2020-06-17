@@ -44,7 +44,7 @@ function opennav() {
             var tipo = (posicao < 40 ? 'fraco' : posicao <=88 ? 'ok' : 'deus');
 
             // trocando a imagem e o estilo do valor da leitura
-            i_status.src = `./img_common/santo-${tipo}.png`;
+            i_status.src = `./projeto-site/public/img/santo-${tipo}.png`;
 			s_leitura.className = `leitura-${tipo}`;       
             
             // atualizando o valor da leitura na página

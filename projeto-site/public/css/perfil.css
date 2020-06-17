@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    overflow: hidden;
 }
 .navbar{
     width: 100%;
@@ -35,14 +36,14 @@ body{
     margin-right: 1%;
     height: 50px;
     cursor: pointer;
-    background: url('../img_common/help.png') center center;
+    background: url('../img/help.png') center center;
     outline: none;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
 }
 #help:hover{
-    background: url('../img_common/help_gold.png') center center;
+    background: url('../img/help_gold.png') center center;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
@@ -60,6 +61,7 @@ body{
 .container{
     float: left;
     width: 100%;
+    height: 100vh;
     background-color: rgb(0, 0, 0, 0.55);
 }
 
@@ -78,11 +80,11 @@ body{
     color: black;
     display: block;
     margin-top: 8%;
-} 
+}
 .sidebar a:hover {
     color: #efdf55;
     background: #3d51ac;
-} 
+}
 .sidebar .closebtn {
     font-size: 37px;
     margin-left: 80%;
@@ -92,85 +94,77 @@ body{
 
 .description{
     float: left;
-    background: url(../img_common/fundo.gif) center center fixed;
+    background: url(../img/fundo.gif) center center fixed;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 #mysidebar{
-    background: url(../img_common/band.png) center;
+    background: url(../img/band.png) center;
     background-size: 160px;
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.5);
     background-position: bottom;
 }
-.games_box{
+h3{
+    width: 15%;
+    margin-top: 50px;
+    margin-left: 25px;
+    float: left;
+    font-size: 25px;
+}
+.tema_box{
+    float: left;
+    height: 119px;
+}
+.perfil_box{
     display: inline-block;
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top:3%;
+    margin-left: 15%;
     margin-bottom: 10%;
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 505px;
     background-color: rgba(255,255,255,0.5);
-    border:rgba(61,81,172,1) 3px solid;
+    border: rgba(61,81,172,1) 3px solid;
     overflow-x: hidden;
     transition: 0.3s;
 }
-.games_foto{
+.informacoes_perfil{
+    font-size: large;
     float: left;
-    height: 350px;
-    width: 255px;
-    background: url(../img_games/santuario-ps2.jpg);
-    background-size: 98%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 10%;
+    height: 35%;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 10px;
 }
-.ps2{
-    background: url(../img_games/hades-ps2.jpg);
-    background-size: 98%;
-    background-repeat: no-repeat;
-    background-position: center center;
+.resultado{
+    padding: 10px;
+    width: 28%;
+    float: right;
 }
-.ps3-1{
-    background: url(../img_games/santuario-ps3.jpg);
-    background-size: 114%;
-    background-repeat: no-repeat;
-    background-position: center center;
+.banner{
+    float: left;
+    height: 170px;
 }
-.ps3-2{
-    background: url(../img_games/bravos-ps3.jpg);
-    background-size: 114%;
-    background-repeat: no-repeat;
-    background-position: center center;
+#grafico{
+    width: 300px;
+    height: 280px;
+    margin-top: 185px;
 }
-.ps3-3{
-    background: url(../img_games/alma-ps3.jpg);
-    background-size: 114%;
-    background-repeat: no-repeat;
-    background-position: center center;
+#aleatorio{
+    float: right;
+    margin-top: 40px;
+    margin-right: 120px;
 }
-.ps4{
-    background: url(../img_games/alma-ps4.jpg);
-    background-size: 111%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.psp{
-    background: url(../img_games/psp.jpg);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.titulo{
+#logoff{
+    float: right;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 10px;
+    margin-top: 15px;
+    color: black;
     text-transform: uppercase;
 }
-p{
-    font-size: 20px;
-}
-hr{
-    width: 95%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    
+#logoff:hover{
+    color: #efdf55;
 }

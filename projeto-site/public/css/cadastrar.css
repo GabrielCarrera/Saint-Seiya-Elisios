@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    overflow: hidden;
 }
 .navbar{
     width: 100%;
@@ -36,14 +35,14 @@ body{
     margin-right: 1%;
     height: 50px;
     cursor: pointer;
-    background: url('../img_common/help.png') center center;
+    background: url('../img/help.png') center center;
     outline: none;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
 }
 #help:hover{
-    background: url('../img_common/help_gold.png') center center;
+    background: url('../img/help_gold.png') center center;
     background-size: 65%;
     background-repeat: no-repeat;
     outline: none;
@@ -61,11 +60,10 @@ body{
 .container{
     float: left;
     width: 100%;
-    height: 100%;
     background-color: rgb(0, 0, 0, 0.55);
 }
 
-/* SIDEBAR */
+/* SIDE BAR */
 .sidebar{
     height: 100%;
     width: 0;
@@ -90,74 +88,66 @@ body{
     margin-left: 80%;
 }
 
-/* DESGRAÇA */
+/* Descrição */
 
 .description{
     float: left;
-    background: url(../img_common/fundo.gif) center center fixed;
+    background: url(../img/fundo.gif) center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 #mysidebar{
-    background: url(../img_common/band.png) center;
+    background: url(../img/band.png) center;
     background-size: 160px;
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.5);
     background-position: bottom;
 }
-.autor_box{
-    margin-top: 2%;
-    margin-left: 9%;
-    width: 80%;
-    height: 500px;
+.tema_box{
+    float: left;
+    height: 119px;
+}
+.cadastro_box{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 17%;
+    margin-bottom: 10%;
+    width: 70%;
+    height: 600px;
     background-color: rgba(255,255,255,0.5);
     border: rgba(61,81,172,1) 3px solid;
     overflow-x: hidden;
     transition: 0.3s;
 }
-
-/* ESTILIZAÇÃO PÁGINA*/
-#kurumada{
-    background: url(../img_kurumada/kurumada.jpg) center center;
-    background-repeat: no-repeat;
-    border-radius: 100px;
-    float: left;
-    height: 265px;
-    width: 340px;
-    padding: 10px;
+.formulario{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
 }
-#bitx{
-    background: url(../img_kurumada/bitx.jpg) center center;
-    background-repeat: no-repeat;
-    background-size: 100;
-    background-size: cover;
-    border-radius: 10px;
-    float: right;
-    height: 200px;
-    width: 470px;
-    padding: 10px;
-    margin-right: 15px;
+.frmCadastro{
+    width: 10%;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 15px;
 }
-#trabalhos{
-    background: url(../img_kurumada/obras.jpg) center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    height: 90%;
+h3{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.answer{
+    font-size: 25px;
     width: 98%;
+    border-radius: 5px;
+}
+.button{
     float: left;
-    margin: 5px 10px 10px 10px;
-}
-.p_1{
-    margin-right: 15px;
-    text-align: justify;
-}
-.p_2{
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: justify;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 46%;
+    margin-top: 10px;
+    cursor: pointer;
 }

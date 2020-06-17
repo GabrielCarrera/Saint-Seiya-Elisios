@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saint Seiya - Perfil</title>
-    <link rel="shortcut icon" href="./img_common/login.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/perfil.css">
-    <script src="./js/perfil.js"></script>
-    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js" ></script>
-    <script src="https://www.chartjs.org/samples/latest/utils.js" ></script>
-
+    <link rel="shortcut icon" href="./projeto-site/public/img/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="./projeto-site/public/css/perfil.css">
+    <script src="./projeto-site/public/js/perfil.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script src="https://kit.fontawesome.com/49c0c1022f.js" crossorigin="anonymous"></script>
     <style>
         #s_leitura {
             font-size: 30pt;
@@ -52,7 +52,7 @@
             <div class="header">
                 <a class="opennav" onclick="opennav()">☰</a>
             </div>
-            <img src="./img_common/logo.png" id="logo">
+            <img src="./projeto-site/public/img/logo.png" id="logo">
             <ul>
                 <li><a href="./index.html">INÍCIO</a></li>
                 <li><a href="./historia.html">HISTÓRIA</a></li>
@@ -67,7 +67,7 @@
         <div class="container">
             <div class="perfil_box" id="box_movement">
                 <div id="foto_perfil"></div>
-                <img src="./img_common/perfil.png" class="banner">
+                <img src="./projeto-site/public/img/perfil.png" class="banner">
                 <div class="informacoes_perfil">
                     
                     Nome: <span id="nome">Gabriel</span><br>
@@ -75,6 +75,7 @@
                     Data Nascimento: <span id="dt"></span><br>
                     Signo: <span id="signo"></span><br>
                 </div>
+                <a id="logoff" href="./index.html">SAIR <i class="fas fa-sign-out-alt"></i></a>
                 <div class="resultado">
                     Temperatura do seu Cosmo: <br><br>
                     <span id="s_leitura">
@@ -86,9 +87,9 @@
                     Máximo alcance do seu cosmo: <b id="b_max"></b> <br>
                 </div><img src="" id="aleatorio" width="200px">
                 <div id="grafico">
-                    
                     <canvas id="usu" width="80" height="80" class="chartjs-render-monitor"
-                        style="display: block; width: 200px; height: 200px; float: right;"></canvas>
+                        style="display: block; width: 200px; height: 290px; float: right;"></canvas>
+                        No momento, este é o nível atual do seu poder.
                 </div>
             </div>
         </div>
@@ -128,11 +129,11 @@
 
             window.chart.update();
             if (media <= 300) {
-				aleatorio.src = './img_common/espectro.png'
+				aleatorio.src = './projeto-site/public/img/espectro.png'
 			} else if (media <= 500) {
-				aleatorio.src = './img_common/taca.png'
+				aleatorio.src = './projeto-site/public/img/taca.png'
 			} else {
-				aleatorio.src = './img_common/poseidon.png'
+				aleatorio.src = './projeto-site/public/img/poseidon.png'
 			}
 
 		}, 5000);
