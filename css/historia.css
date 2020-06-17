@@ -132,7 +132,8 @@ body{
     height: 100%;
 }
 .introducao{
-    height: 505%;
+    height: 100%;
+    margin-bottom: 29%;
 }
 #protagonistas{
     background: url(../img_historia/pegasus.png) center center ;

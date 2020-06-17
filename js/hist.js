@@ -23,7 +23,12 @@ function escolha(){
             box_intro.style.display = 'none';
             box_manga.style.display = 'block';
             box_anime.style.display = 'none';
-        } else {
+        }
+        else if (tipo_conteudo.value == '0'){
+            box_intro.style.display = 'block';
+            box_manga.style.display = 'none';
+            box_anime.style.display = 'none';
+        }else {
             alert ('Por favor, escolha uma opção válida!')
             box_intro.style.display = 'block';
             box_manga.style.display = 'none';
