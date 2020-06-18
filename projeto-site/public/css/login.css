@@ -116,7 +116,7 @@ h3{
     height: 119px;
 }
 .login_box{
-display: inline-block;
+    display: inline-block;
     margin-top: 10%;
     margin-left: 35%;
     margin-bottom: 10%;
@@ -127,7 +127,7 @@ display: inline-block;
     overflow-x: hidden;
     transition: 0.3s;
 }
-.formulario{
+#form_login{
     text-align: center ;
     font-size: 25px;
     margin-top: 22%;

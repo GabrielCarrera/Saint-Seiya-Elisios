@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página com exemplo de Autenticação (Login)</title>
-
+    <title>Saint Seiya - Login</title>
+    <link rel="shortcut icon" href="./img/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/nav.js"></script>
+    
 </head>
 
 <body>
+    <div class="description">
+        <div class="sidebar" id="mysidebar">
+            <a href="#" class="closebtn" onclick="closenav()">x</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="#">Login</a>
+            <a href="cadastrar.html">Cadastre-se</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
 
-    <form id="form_login" method="post" onsubmit="return entrar()">
-        Usuário: <input type="text" name="login">
-        <br>
-        Senha: <input type="password" name="senha">
-        <br>
-        <button id="btn_entrar">Entrar</button>
-    </form>
-    
-    <img src="aguarde.gif" id="img_aguarde" style="display: none;">
-    
-    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
-        
+        <div class="navbar" id="mynavbar">
+            <div class="header">
+                <a class="opennav" onclick="opennav()">☰</a>
+            </div>
+            <img src="./img/logo.png" id="logo">
+            <ul>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./historia.html">HISTÓRIA</a></li>
+                <li><a href="./personagens.html">PERSONAGENS</a></li>
+                <li><a href="./games.html">GAMES</a></li>
+                <li><a href="./autor.html">AUTOR</a></li>
+            </ul>
+            <a href="help.html" id="help"></a>
+        </div>
+
+
+        <div class="container">
+            <div class="login_box" id="login_box_movement">
+                <img src="./img/tema.png" class="tema_box">
+                <h3>Login:</h3><br>
+                <form id="form_login"  method="post" onsubmit="return entrar()">
+                    E-mail: <br>
+                    <input type="email" placeholder="Insira seu e-mail" name="login" class="answer" required> <br>
+                    Senha: <br>
+                    <input type="password" placeholder="Insira sua senha" name="senha" class="answer" required>
+                    <br>
+                    <button type="submit" id="btn_entrar" class="button">Entrar</button>
+                </form>
+                <a href="cadastrar.html"><button class="button">Cadastre-se</button></a>
+            </div>
+        </div>
     </div>
 
 </body>
 
 </html>
 <script>
+    
 
     function entrar() {
-        aguardar();
+        
+        // aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
             body: formulario
         }).then(resposta => {
-            
+
             if (resposta.ok) {
 
                 resposta.json().then(json => {
 
-                    sessionStorage.login_usuario_meuapp = json.nome_usuario;
+                    sessionStorage.login_usuario_meuapp = json.email_usuario;
                     sessionStorage.nome_usuario_meuapp = json.nome_usuario;
-                    
-                    window.location.href = 'index.html';
+
+                    window.location.href = 'perfil.html';
+
                 });
 
             } else {
@@ -60,19 +92,6 @@
         });
 
         return false;
-    }
-
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.display = 'block';
-        div_erro.style.display = 'none';
-    }
-
-    function finalizar_aguardar(resposta) {
-        btn_entrar.disabled = false;
-        img_aguarde.style.display= 'none';
-        div_erro.style.display = 'block';
-        div_erro.innerHTML = resposta;
     }
 
 </script>
