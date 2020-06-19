@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(127,143,201,1) 3%, rgba(101,124,227,1) 30%, rgba(24,42,117,1) 55%, rgba(2,24,116,1) 82%);
+}
+#logo{
+    float: left;
+    height: 80px;
+}
+.navbar ul {
+    margin: 0;
+    display: inline-block;
+}
+.navbar li{
+    padding: 28px;
+    margin: 0;
+    display: inline-block;
+    margin-left: 25px;
+}
+.navbar a:hover{
+    color: #efdf55;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#help{
+    width: 4%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 1%;
+    height: 50px;
+    cursor: pointer;
+    background: url('../img/help.png') center center;
+    outline: none;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+#help:hover{
+    background: url('../img/help_gold.png') center center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+.opennav{
+    margin-top: 20px;
+    float: left;
+}
+.header .opennav{
+    font-size: 30px ;
+    margin-left: 2%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.container{
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.55);
+}
+
+/* SIDE BAR */
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.sidebar a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-top: 8%;
+}  
+.sidebar a:hover {
+    color: #efdf55;
+    background: #3d51ac;
+} 
+.sidebar .closebtn {
+    font-size: 37px;
+    margin-left: 80%;
+}
+.sobre_box{
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 80%;
+    height: 80% ;
+    background-color: rgba(255,255,255,0.5);
+    border: rgba(61,81,172,1) 3px solid;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/* Descrição */
+.description{
+    float: left;
+    background: url(../img/fundo.gif) center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#mysidebar{
+    background: url(../img/band.png) center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: bottom;
+}
+
+.box{
+    border-radius: 100px;
+    float: left;
+    height: 265px;
+    width: 340px;
+    padding: 10px;
+}
+.biel_1{
+    background: url(../img/perfil.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.biel_2{
+    background: url(../img/.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.biel_3{
+    background: url(../img/perfil.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bitx{
+    background: url(../img/eu.png) center center;
+    background-repeat: no-repeat;
+    background-size: 100;
+    background-size: cover;
+    border-radius: 10px;
+    float: right;
+    height: 200px;
+    width: 470px;
+    padding: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+#trabalhos{
+    background: url(../img/obras.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 90%;
+    width: 98%;
+    float: left;
+    margin: 5px 10px 10px 10px;
+}
+.p_1{
+    float: left;
+    margin-right: 15px;
+    text-align: justify;
+}
+.p_2{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
