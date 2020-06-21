@@ -12,7 +12,8 @@
     <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
     <script src="https://kit.fontawesome.com/49c0c1022f.js" crossorigin="anonymous"></script>
     <script src="funcoes.js"></script>
-    
+
+    <!-- CONFIGURAÇÕES DE ESTÉTICA DO GRÁFICO DE ACORDO COM VALORES GERADOS RANDÔMICAMENTE -->
     <style>
         #s_leitura {
             font-size: 30pt;
@@ -36,12 +37,14 @@
             color: rgb(240, 238, 133);
         }
     </style>
-    
+
 </head>
 </head>
 
 <body>
+    <!-- CABEÇALHO + PLANO DE FUNDO -->
     <div class="description">
+        <!-- MENU LATERAL -->
         <div class="sidebar" id="mysidebar">
             <a href="#" class="closebtn" onclick="closenav()">x</a>
             <a href="#">Perfil</a>
@@ -49,7 +52,7 @@
             <a href="cadastrar.html">Cadastre-se</a>
             <a href="sobre.html">Sobre</a>
         </div>
-
+        <!-- BARRA DE NAVEGAÇÃO -->
         <div class="navbar" id="mynavbar">
             <div class="header">
                 <a class="opennav" onclick="opennav()">☰</a>
@@ -65,7 +68,7 @@
             <a href="help.html" id="help"></a>
         </div>
 
-
+        <!-- INFORMAÇÕES PERFIL, GRÁFICOS GERADOS ALEATORIAMENTE, DADOS PUXADOS DIRETAMENTE DO CADASTRO DO BANCO DE DADOS E DIRECIONADO DO LOGIN, BOTÃO DE LOGOOF FUNCIONANDO-->
         <div class="container">
             <div class="perfil_box" id="box_movement">
                 <div id="foto_perfil"></div>
@@ -73,9 +76,9 @@
                 <div class="informacoes_perfil">
 
                     Nome: <b id="b_usuario"></b><br>
-                    Idade: <span id="idade"></span><br>
-                    Data Nascimento: <span id="dt"></span><br>
-                    Signo: <span id="signo"></span><br>
+                    Email: <b id="b_email"></b><br>
+                    Data Nascimento: <b id="b_dt"></b><br>
+                    Signo: <b id="b_signo"></b><br>
                 </div>
                 <a onclick="logoff()" id=logoff href="./index.html">SAIR <i class="fas fa-sign-out-alt"></i></a>
                 <div class="resultado">
@@ -85,6 +88,8 @@
                     </span>
                     <img id="i_status" style="height: 80px;">
                     <br><br><br>
+
+                    <!-- INFORMAÇÕES DE LIMITE DE COSMO DE ACORDO COM O GRÁFICO DE HTML -->
                     Mínimo alcance do seu cosmo: <b id="b_min"></b> <br>
                     Máximo alcance do seu cosmo: <b id="b_max"></b> <br>
                 </div><img src="" id="aleatorio" width="200px">
@@ -96,7 +101,9 @@
             </div>
         </div>
     </div>
+     
 
+    <!--  SCRIPT COM VALORES RANDÔMICOS DE DADOS DO PERFIL -->
     <script>
         var presets = window.chartColors;
         var utils = Samples.utils;
@@ -168,6 +175,8 @@
 </body>
 
 </html>
+<!-- SOMENTE PODERÁ ACESSAR ESTA PÁGINA SE FIZER LOGIN, VALIDAÇÃO EM SCRIPT LOGO ABAIXO -->
 <script>
     verificar_autenticacao();
+
 </script>

@@ -8,11 +8,14 @@
     <link rel="shortcut icon" href="./img/login.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/login.css">
     <script src="./js/nav.js"></script>
-    
+
 </head>
 
 <body>
+
+    <!-- CABEÇALHO + PLANO DE FUNDO -->
     <div class="description">
+        <!-- MENU LATERAL -->
         <div class="sidebar" id="mysidebar">
             <a href="#" class="closebtn" onclick="closenav()">x</a>
             <a href="perfil.html">Perfil</a>
@@ -20,6 +23,7 @@
             <a href="cadastrar.html">Cadastre-se</a>
             <a href="sobre.html">Sobre</a>
         </div>
+        <!-- BARRA DE NAVEGAÇÃO -->
 
         <div class="navbar" id="mynavbar">
             <div class="header">
@@ -36,12 +40,12 @@
             <a href="help.html" id="help"></a>
         </div>
 
-
+        <!-- INFORMAÇÕES DE LOGIN, VALIDAÇÃO DE ACORDO CO0M API NECESSÁRIA NESAS PARTE DE ACORDO COM SEUS CAMINHOS -->
         <div class="container">
             <div class="login_box" id="login_box_movement">
                 <img src="./img/tema.png" class="tema_box">
                 <h3>Login:</h3><br>
-                <form id="form_login"  method="post" onsubmit="return entrar()">
+                <form id="form_login" method="post" onsubmit="return entrar()">
                     E-mail: <br>
                     <input type="email" placeholder="Insira seu e-mail" name="login" class="answer" required> <br>
                     Senha: <br>
@@ -58,10 +62,10 @@
 
 </html>
 <script>
-    
+
 
     function entrar() {
-        
+
         // aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
@@ -75,6 +79,8 @@
 
                     sessionStorage.login_usuario_meuapp = json.email_usuario;
                     sessionStorage.nome_usuario_meuapp = json.nome_usuario;
+                    sessionStorage.dtnasc_usuario_meuapp = json.dt_nascimento;
+                    sessionStorage.signo_usuario_meuapp = json.signo;
 
                     window.location.href = 'perfil.html';
 

@@ -14,7 +14,4 @@ signo varchar(50)
 drop database SaintSeiya_Elisios;
 
 
-insert into usuario values (null, 'Gabriel', 'bandtec','gabriel.carrera@hotmail.com' ,'1996-01-30', 'Áquario');
-
-insert into usuario values (null, 'Leonardo Freire', 'bandtec', 'leo.freire@hotmail.com', '1998-03-15', 'Áries'),
-(null, 'José Lucas Queiroz', 'bandtec', 'jose.queiroz@hotmail.com ','2002-06-22', 'Câncer' );
+select*from usuario;

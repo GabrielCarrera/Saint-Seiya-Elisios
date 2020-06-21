@@ -12,7 +12,11 @@
 </head>
 
 <body>
+    <!-- CABEÇALHO + PLANO DE FUNDO -->
+
     <div class="description">
+        <!-- MENU LATERAL -->
+
         <div class="sidebar" id="mysidebar">
             <a href="#" class="closebtn" onclick="closenav()">x</a>
             <a href="perfil.html">Perfil</a>
@@ -20,6 +24,7 @@
             <a href="#">Cadastre-se</a>
             <a href="sobre.html">Sobre</a>
         </div>
+        <!-- BARRA DE NAVEGAÇÃO -->
 
         <div class="navbar" id="mynavbar">
             <div class="header">
@@ -36,16 +41,17 @@
             <a href="help.html" id="help"></a>
         </div>
 
-
+        <!-- CAIXA DE SELEÇÃO DE ACORDO COM A LÓGICA DOS SIGNOS, DEPENDENDO DO DIA E MÊS, CONSEGUIMOS OBTER O SIGNO DA PESSOA, DESCRITO NA CAIXA BLOQUEADA PARA DIGITAÇÃO -->
         <div class="container">
             <div class="cadastro_box" id="cadastro_box_movement">
                 <img src="./img/tema.png" class="tema_box">
                 <h3>Cadastro:</h3>
-                <form action="./perfil.html" class="formulario" name="frmCadastro">
+                <form id="form_cadastro" method="post" class="formulario" name="frmCadastro">
                     Nome completo: <br>
-                    <input type="text" placeholder="Insira seu nome completo" class="answer" required> <br>
+                    <input type="text" placeholder="Insira seu nome completo" name="nome" class="answer" required> <br>
                     Data nascimento:
-                    <select class="frmCadastro" name="DiaNascimentoCadastro" onchange="SignoMudar()">
+                    <select class="frmCadastro" name="DiaNascimentoCadastro" id="dia"
+                        onchange="SignoMudar();concatenar()">
                         <option value="">Dia</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -79,7 +85,8 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <select class="frmCadastro" name="MesNascimentoCadastro" onchange="SignoMudar()">
+                    <select class="frmCadastro" name="MesNascimentoCadastro" id="mes"
+                        onchange="SignoMudar();concatenar()">
                         <option value="">Mês</option>
                         <option value="01">Janeiro</option>
                         <option value="02">Fevereiro</option>
@@ -94,7 +101,8 @@
                         <option value="11">Novembro</option>
                         <option value="12">Dezembro</option>
                     </select>
-                    <select class="frmCadastro" name="AnoNascimentoCadastro" onchange="SignoMudar()">
+                    <select class="frmCadastro" name="AnoNascimentoCadastro" id="ano"
+                        onchange="SignoMudar();concatenar()">
                         <option value="">Ano</option>
                         <option value="2017">2017</option>
                         <option value="2016">2016</option>
@@ -195,27 +203,71 @@
                         <option value="1921">1921</option>
                         <option value="1920">1920</option>
                     </select>
+                    <input type="text" name="dt_nasc" id="valor" style="display: none;">
                     <br>
+
+                    <!-- CADASTRO DAS DEMAIS INFORMAÇÕES LOGO APÓS NOME COMPLETO E DATA DE NASCIMENTO -->
                     E-mail:
-                    <input type="email" placeholder="Insira seu e-mail" class="answer" required> <br>
-                    Telefone: <br>
-                    <input type="tel" placeholder="Insira seu telefone" class="answer" required> <br>
+                    <input type="email" name="email" placeholder="Insira seu e-mail" class="answer" required> <br>
+                    Senha: <br>
+                    <input type="password" name="senha" placeholder="Insira sua senha" class="answer" required> <br>
                     Seu Signo:
                     <input autocomplete="off" type="text" readonly="readonly" value="" name="SignoCadastro"
                         placeholder="Esse é seu signo" class="answer" required> <br>
                     Novo na comunidade?<br>
                     Sim
-                    <label for="sim_radio" >
+                    <label for="sim_radio">
                         <input type="radio" name="novo_comunidade" required></label>
                     Não
                     <label for="nao_radio">
                         <input type="radio" name="novo_comunidade" required></label>
                     <br>
-                    <input type="submit" value="Cadastrar" class="button">
+                    <!-- BOTÃO RESPONSÁVEL PELA LINKAGEM DAS INFORMAÇÕES INSERIDAS NO LOGIN ACIMA -->
+                    <button id="btn_entrar" type="submit" class="button"
+                        onclick=" return cadastrar()">Cadastrar</button>
                 </form>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
+
+    <!-- SCRIPT DA FUNÇÃO CADASTRAR E CONCATENAR, PARA OBTER AS INFORMAÇÕES DE DATA E INSERÍ-LAS NO BANCO DE DADOS-->
+<script>
+    function cadastrar() {
+
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                alert('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    alert(resposta);
+                });
+
+            }
+        });
+
+        return false;
+    }
+    
+    function concatenar() {
+        var dia_d = dia.value;
+        var mes_d = mes.value;
+        var ano_d = ano.value;
+
+        var juntar = `${ano_d}-${mes_d}-${dia_d}`
+        console.log(juntar);
+        valor.value = juntar;
+    }
+</script>

@@ -93,6 +93,7 @@ body{
     margin-left: 9%;
     width: 80%;
     height: 80% ;
+    border-radius: 20px;
     background-color: rgba(255,255,255,0.5);
     border: rgba(61,81,172,1) 3px solid;
     overflow-x: hidden;
@@ -115,59 +116,64 @@ body{
     background-position: bottom;
 }
 
-.box{
+.box_outside{
+    background: url(../img/perfil.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: rgba(61,81,172,1) 3px solid; 
     border-radius: 100px;
     float: left;
-    height: 265px;
-    width: 340px;
-    padding: 10px;
-}
-.biel_1{
-    background: url(../img/perfil.jpg) center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.biel_2{
-    background: url(../img/.png) center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.biel_3{
-    background: url(../img/perfil.jpg) center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#bitx{
-    background: url(../img/eu.png) center center;
-    background-repeat: no-repeat;
-    background-size: 100;
-    background-size: cover;
-    border-radius: 10px;
-    float: right;
-    height: 200px;
-    width: 470px;
-    padding: 10px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-}
-#trabalhos{
-    background: url(../img/obras.jpg) center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
     height: 90%;
-    width: 98%;
-    float: left;
-    margin: 5px 10px 10px 10px;
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 2%;
+    padding: 10px;
 }
-.p_1{
-    float: left;
-    margin-right: 15px;
-    text-align: justify;
+.box_inside{
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.9);
+    border: rgba(61,81,172,1) 3px solid;
+    height: 550px;
+    width: 560px;
+    margin-left: 70px;
+    padding: 10px;
 }
-.p_2{
-    margin-left: 15px;
-    margin-right: 15px;
+h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+p{
+    float: left;
     text-align: justify;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.inside_icons{
+    padding: 10px;
+    width: 96%;
+    height: 9%;
+    float: left;
+}
+.fab{
+    font-size: 50px;
+    float: left;
+    margin-left: 45px;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-instagram{
+    color: #c9308f;
+}
+.fa-twitch{
+    color: #9147ff;
+}
+.fa-github{
+    color: #24292e;
+}
+.fa-linkedin{
+    color: rgb(0, 119, 181);
 }
